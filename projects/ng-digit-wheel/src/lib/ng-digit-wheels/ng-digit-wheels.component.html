@@ -1,0 +1,16 @@
+<div>{{ this.digits | json }}</div>
+--------------------
+<div style="display: flex; flex-direction: row">
+  <lib-ng-digit-wheel
+    *ngFor="let digit of digits; trackBy: trackByMethod"
+    [selectedDigit]="digit"
+  ></lib-ng-digit-wheel>
+</div>
+
+<!-- {{ _value$ | async }}
+<div style="display: flex; flex-direction: row">
+  <lib-ng-digit-wheel
+    *ngFor="let digit of _updatingValue | async; trackBy: trackByMethod"
+    [selectedDigit]="digit"
+  ></lib-ng-digit-wheel>
+</div> -->

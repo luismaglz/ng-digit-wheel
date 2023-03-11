@@ -1,0 +1,21 @@
+.digit-window {
+  display: block;
+  height: 18px;
+  overflow-y: scroll;
+}
+
+.digit-window::-webkit-scrollbar {
+  display: none;
+}
+
+.digit-window-slider {
+  display: block;
+  box-sizing: border-box;
+  transition: all 0.6s;
+}
+
+.digit {
+  box-sizing: border-box;
+  display: block;
+  height: 18px;
+}

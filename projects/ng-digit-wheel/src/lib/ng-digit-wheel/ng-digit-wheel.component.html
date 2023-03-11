@@ -1,0 +1,19 @@
+<div class="digit-window">
+  <div *ngIf="_char !== null" class="digit-char">{{ _char }}</div>
+  <div
+    *ngIf="_char === null && _digit > -1"
+    class="digit-window-slider"
+    [style.transform]="translate"
+  >
+    <div #digit class="digit">0</div>
+    <div #digit class="digit">1</div>
+    <div #digit class="digit">2</div>
+    <div #digit class="digit">3</div>
+    <div #digit class="digit">4</div>
+    <div #digit class="digit">5</div>
+    <div #digit class="digit">6</div>
+    <div #digit class="digit">7</div>
+    <div #digit class="digit">8</div>
+    <div #digit class="digit">9</div>
+  </div>
+</div>
